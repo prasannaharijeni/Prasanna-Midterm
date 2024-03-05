@@ -38,20 +38,21 @@ public class InventoryItem
     {
         // Decrease the item's stock quantity by the quantity sold.
         // Make sure the stock doesn't go negative.
+
         QuantityInStock = Math.Max(QuantityInStock - quantitySold, 0);
     }
 
     // Check if an item is in stock
     public bool IsInStock()
     {
-        // TODO: Return true if the item is in stock (quantity > 0), otherwise false.
+        // Return true if the item is in stock (quantity > 0), otherwise false.
         return QuantityInStock > 0;
     }
 
     // Print item details
     public void PrintDetails()
     {
-        // TODO: Print the details of the item (name, id, price, and stock quantity).
+        // Print the details of the item (name, id, price, and stock quantity).
         Console.WriteLine($"Item Name: {ItemName}, Item ID: {ItemId}, Price: ${Price}, Quantity in Stock: {QuantityInStock}");
     }
 }
@@ -68,7 +69,7 @@ class Program
         InventoryItem item1 = new InventoryItem("Laptop", 101, 1200.50, 10);
         InventoryItem item2 = new InventoryItem("Smartphone", 102, 800.30, 15);
 
-        // TODO: Implement logic to interact with these objects.
+        // Implement logic to interact with these objects.
         // Example tasks:
 
         // 1. Print details of all items.
